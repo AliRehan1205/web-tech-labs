@@ -64,6 +64,24 @@ h3 ~ p{
  font-style: italic;
 }
 
+button:hover{
+ background-color: orange;
+ color: white;
+}
+
+input:focus{
+ background-color: lightgreen;
+ outline: none;
+}
+
+input:checked{
+ outline: 3px solid red;
+}
+
+li:nth-child(odd){
+ background-color: lightgray;
+}
+
 </style>
 
 </head>
@@ -151,6 +169,26 @@ h3 ~ p{
 <p>This paragraph is immediately after the heading.</p>
 
 <p>This paragraph is the second one after the heading.</p>
+
+<h2>Hover Example</h2>
+
+<button>Hover Over Me</button>
+
+<h2>Checkbox Example</h2>
+
+<label>
+<input type="checkbox"> I agree to the terms
+</label>
+
+<h2>List Example</h2>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Python</li>
+<li>Java</li>
+</ul>
 
 </body>
 
