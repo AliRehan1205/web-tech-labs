@@ -27,6 +27,43 @@ h1{
  color:green;
 }
 
+input[type]{
+ border:2px solid blue;
+ padding:5px;
+}
+
+input[type="text"]{
+ background-color: lightyellow;
+}
+
+a[href^="https"]{
+ color: green;
+}
+
+a[href*="google"]{
+ font-weight: bold;
+}
+
+a[href$=".com"]{
+ text-decoration: none;
+}
+
+div p{
+ color: purple;
+}
+
+div > p{
+ background-color: lightblue;
+}
+
+h3 + p{
+ color: red;
+}
+
+h3 ~ p{
+ font-style: italic;
+}
+
 </style>
 
 </head>
@@ -37,11 +74,83 @@ h1{
 
 <h2 id="mainTitle">ID Selector Example</h2>
 
+<h2>Attribute Selector Examples</h2>
+
+<input type="text" placeholder="Enter your name">
+
+<br><br>
+
+<input type="email" placeholder="Enter email">
+
+<br><br>
+
+<input type="password" placeholder="Enter password">
+
+<br><br>
+
+<a href="https://google.com">Google Link</a>
+
+<br>
+
+<a href="https://github.com">GitHub Link</a>
+
 <p>This paragraph uses element selector.</p>
 
 <p class="highlight">This paragraph uses class selector.</p>
 
 <p>This is another paragraph.</p>
+
+<h2>Attribute Selector Examples</h2>
+
+<input type="text" placeholder="Enter your name">
+
+<br><br>
+
+<input type="email" placeholder="Enter your email">
+
+<br><br>
+
+<input type="password" placeholder="Enter password">
+
+<h2>Combinator Examples</h2>
+
+<div class="container">
+
+    <p>This paragraph is inside the div.</p>
+
+    <section>
+        <p>This paragraph is inside section inside div.</p>
+    </section>
+
+</div>
+
+<p>This paragraph is outside the div.</p>
+
+<h3>Heading Example</h3>
+
+<p>Paragraph immediately after heading.</p>
+
+<p>Another paragraph after heading.</p>
+
+<h2>Combinator Example</h2>
+
+<div>
+
+<p>This paragraph is inside a div.</p>
+
+<section>
+<p>This paragraph is inside section inside div.</p>
+</section>
+
+</div>
+
+<p>This paragraph is outside the div.</p>
+
+<h3>Heading Example</h3>
+
+<p>This paragraph is immediately after the heading.</p>
+
+<p>This paragraph is the second one after the heading.</p>
 
 </body>
 
